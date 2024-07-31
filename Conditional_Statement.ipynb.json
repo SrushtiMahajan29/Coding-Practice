@@ -1,0 +1,231 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "ea30b6d7",
+   "metadata": {},
+   "source": [
+    "# Simple If"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "96c6d188",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Value of variable is 10\n",
+      "Bye\n"
+     ]
+    }
+   ],
+   "source": [
+    "var = 10\n",
+    "\n",
+    "if(var==10): # your condition is getting True\n",
+    "    print(\"Value of variable is 10\")\n",
+    "    \n",
+    "print(\"Bye\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "1c413fcd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "bye\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = 25\n",
+    "\n",
+    "if(a>=30): # Condition is getting False\n",
+    "    print(\"Value of variable is 25\")\n",
+    "    \n",
+    "print(\"bye\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "20d45a32",
+   "metadata": {},
+   "source": [
+    "# If_Else"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "8f750f2d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the value of A : 10\n",
+      "Enter the value of B : 20\n",
+      "B is greater\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = int(input(\"Enter the value of A : \"))\n",
+    "b = int(input(\"Enter the value of B : \"))\n",
+    "\n",
+    "if a<b: # Condition is getting True\n",
+    "    print(\"B is greater\")\n",
+    "else: # Else part call\n",
+    "    print(\"A is greater\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "616e79df",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Y is greater\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = 25\n",
+    "y = 30\n",
+    "\n",
+    "if x<y: # Condition True\n",
+    "    print(\"Y is greater\")\n",
+    "else:\n",
+    "    print(\"X is greater\")\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c04b6930",
+   "metadata": {},
+   "source": [
+    "# If Else Ladder"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "b358257f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter your percentange : 45\n",
+      "Fail\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 1) Percentange greater than 70 == Dist\n",
+    "# 2) Percentage greater or equalto 65 and Less than 70 == 1st Class\n",
+    "# 3) Percentage greater or equalto 60 and Less than 65 == 2st Class\n",
+    "# 4) Percentage greater or equalto 55 and Less than 60 == 3st Class\n",
+    "# 5) Percentange less than 55 == Fail\n",
+    "\n",
+    "p = int(input(\"Enter your percentange : \"))\n",
+    "\n",
+    "if p>=70:\n",
+    "    print(\"Dist\")\n",
+    "elif p>=65 and p<70:\n",
+    "    print(\"1st Class\")\n",
+    "elif p>=60 and p<65:\n",
+    "    print(\"2nd Class\")\n",
+    "elif p>=55 and p<60:\n",
+    "    print(\"3rd class\")\n",
+    "else:\n",
+    "    print(\"Fail\")\n",
+    "    \n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f1af88c3",
+   "metadata": {},
+   "source": [
+    "# Nested If"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "4fd277ad",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter your Age : 19\n",
+      "Enter your Weight : 65\n",
+      "Blood Donate\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 1) Age>=18\n",
+    "# 2) Weight>=50\n",
+    "# 3) If both age and weight match with certeria then the user can donate the blood\n",
+    "# 4) if age is less than 18 show one msg under age\n",
+    "# 5) if weight is less than 50 show one msg under weight\n",
+    "# 6) if age doesnot match then it should ask for weight\n",
+    "\n",
+    "age = int(input(\"Enter your Age : \"))\n",
+    "\n",
+    "\n",
+    "if age>=18:\n",
+    "    weg = int(input(\"Enter your Weight : \"))\n",
+    "    if weg>=50:\n",
+    "        print(\"Blood Donate\")\n",
+    "    else:\n",
+    "        print(\"Under Weight\")\n",
+    "else:\n",
+    "    print(\"Under Age\")\n",
+    "        "
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
